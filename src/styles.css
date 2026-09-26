@@ -271,3 +271,312 @@ input {
     grid-template-columns: 1fr;
   }
 }
+
+/* 钙化根管通路台 */
+
+.station {
+  margin-bottom: 20px;
+}
+
+.station-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.station-metric {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px 16px;
+  background: #fbfdff;
+}
+
+.station-metric span {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.station-metric strong {
+  display: block;
+  margin-top: 6px;
+  font-size: 26px;
+}
+
+.station-filters {
+  margin-bottom: 14px;
+}
+
+.chip-active {
+  background: var(--primary) !important;
+  color: #ffffff;
+  border-color: var(--primary) !important;
+}
+
+.station-columns {
+  display: grid;
+  grid-template-columns: minmax(320px, 5fr) 7fr;
+  gap: 18px;
+  align-items: start;
+}
+
+.record-row {
+  display: grid;
+  gap: 6px;
+  width: 100%;
+  min-height: 0;
+  margin-bottom: 10px;
+  padding: 12px 14px;
+  text-align: left;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #fbfdff;
+}
+
+.record-row.active {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 1px var(--primary);
+}
+
+.row-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.row-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 10px;
+  color: #526070;
+  font-size: 13px;
+}
+
+.zone-badge {
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.zone-observation {
+  background: #fff7ed;
+  color: #c2410c;
+  border: 1px solid #fdba74;
+}
+
+.zone-ready {
+  background: #ecfdf5;
+  color: #047857;
+  border: 1px solid #6ee7b7;
+}
+
+.zone-preparing {
+  background: #eef2ff;
+  color: #4338ca;
+  border: 1px solid #a5b4fc;
+}
+
+.flag {
+  padding: 1px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  background: #fef2f2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+}
+
+.flag-ok {
+  background: #ecfdf5;
+  color: #047857;
+  border-color: #a7f3d0;
+}
+
+.flag-neutral {
+  background: #f1f5f9;
+  color: #475569;
+  border-color: #e2e8f0;
+}
+
+.detail {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 18px;
+  background: #ffffff;
+}
+
+.detail-empty {
+  display: grid;
+  place-items: center;
+  min-height: 220px;
+}
+
+.detail-head {
+  margin-bottom: 14px;
+}
+
+.detail-head h3 {
+  margin-bottom: 0;
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.detail-full {
+  grid-column: 1 / -1;
+}
+
+.field-label {
+  display: block;
+  margin-bottom: 8px;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.field-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.field-row input {
+  flex: 1;
+  min-width: 0;
+}
+
+select {
+  width: 100%;
+  min-height: 42px;
+  padding: 0 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: #ffffff;
+  color: #172033;
+  font: inherit;
+}
+
+.station input[type="checkbox"] {
+  width: auto;
+  min-height: 0;
+}
+
+.check-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  font-size: 14px;
+  color: #334155;
+}
+
+.check-line label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.location-current {
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.location-edit input {
+  min-width: 0;
+}
+
+.history-list {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.history-list li {
+  padding: 6px 10px;
+  border-left: 3px solid var(--accent);
+  border-radius: 4px;
+  background: #faf5ff;
+  color: #4c1d95;
+}
+
+.banner-frozen,
+.banner-obs {
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin: 0 0 14px;
+  font-weight: 600;
+}
+
+.banner-frozen {
+  background: #eef2ff;
+  border: 1px solid #a5b4fc;
+  color: #3730a3;
+}
+
+.banner-obs {
+  background: #fff7ed;
+  border: 1px solid #fdba74;
+  color: #9a3412;
+}
+
+.form-error {
+  padding: 8px 12px;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+.new-record {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 14px;
+  padding: 14px;
+  border: 1px dashed var(--border);
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.new-record-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.muted-text {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.detail-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.doctor-input {
+  max-width: 180px;
+}
+
+.detail-updated {
+  margin: 14px 0 0;
+}
+
+@media (max-width: 960px) {
+  .station-columns,
+  .detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .station-metrics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

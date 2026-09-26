@@ -1,3 +1,4 @@
+import CalcifiedBoard from "./calcified/CalcifiedBoard";
 import "./styles.css";
 
 const project = {
@@ -91,6 +92,8 @@ function App() {
           <strong>{project.stack}</strong>
         </div>
       </section>
+
+      <CalcifiedBoard />
 
       <section className="metrics-grid">
         {project.metrics.map((metric: string, index: number) => (
